@@ -2,14 +2,51 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description"
+        content="Virtual dice game UI contains user/player, and will be accomodating two player playing at the same time" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" href="./img/dice-6.png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
     <title>Dice Game</title>
 </head>
 
 <body>
+    <!--Main section Start-->
+    <main>
+        <!--Player1 Section-->
+        <div class="games_player">
+            <section class="player player--0 player--active">
+                <h2 class="name" id="name--0">Player 1</h2>
+                <p class="score" id="score--0">20</p>
+                <div class="current">
+                    <p class="current-label">Current</p>
+                    <p class="current-score" id="current--0">0</p>
+                </div>
+            </section>
+            <!--Player2 Section-->
+            <section class="player player--1">
+                <h2 class="name" id="name--1">Player 2</h2>
+                <p class="score" id="score--1">10</p>
+                <div class="current">
+                    <p class="current-label">Current</p>
+                    <p class="current-score" id="current--1">0</p>
+                </div>
+            </section>
+        </div>
+        <!--End of players section-->
 
+        <!--Buttons Section-->
+        <img src="/img/dice-5.png" alt="Pic not loaded🤯" class="dice" />
+        <button class="btn btn--new">🔄 New game</button>
+        <button class="btn btn--roll">🎲 Roll dice</button>
+        <button class="btn btn--hold">📥 Hold</button>
+    </main>
+    <!--Main section End-->
+    <script src="script.js"></script>
 </body>
 
 </html>

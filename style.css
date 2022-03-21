@@ -176,3 +176,74 @@ main .btn {
   display: flex;
   height: 100%;
 }
+
+@media (max-width: 991px) {
+  .current {
+    width: 58%;
+  }
+  main {
+    overflow: initial !important;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: auto;
+  }
+  .btn--roll {
+    top: 25rem;
+  }
+  .btn--hold {
+    top: 31.1rem;
+  }
+  .player {
+    padding: 6rem;
+  }
+  .btn--new {
+    top: 12rem;
+  }
+}
+
+@media (max-width: 767px) {
+  main {
+    height: auto;
+    margin-top: auto;
+    background: none;
+    backdrop-filter: none;
+    box-sizing: unset;
+    box-shadow: none;
+    filter: none;
+  }
+  .games_player {
+    display: block;
+    height: auto;
+    padding-bottom: 8px;
+    padding-top: 10px;
+  }
+  section.player.player--1 {
+    background-color: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(200px);
+    border-radius: 0px 0px 10px 10px;
+    padding-top: 12rem;
+  }
+  section.player.player--0 {
+    background-color: rgb(255 255 255 / 59%);
+    backdrop-filter: blur(200px);
+    border-radius: 10px 10px 0px 0px;
+    padding-bottom: 10rem;
+    padding-top: 10rem;
+  }
+  .player {
+    padding: 5rem 0px;
+  }
+  .current {
+    width: 220px;
+  }
+  .btn--roll {
+    top: 45rem;
+  }
+  .btn--hold {
+    top: 56rem;
+  }
+  .btn--new {
+    top: 3rem;
+  }
+}
